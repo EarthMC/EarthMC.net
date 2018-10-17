@@ -1,0 +1,2 @@
+# earthmc.net
+EarthMC website
