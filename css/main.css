@@ -1,0 +1,383 @@
+/*Fixing CSS bugs*/
+* {
+margin: 0;
+padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #1E1E1E;
+    margin: 0;
+    background-color: #f3f3f3;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+* {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-kerning: auto;
+}
+
+/*@font-face {
+    font-family: ;
+    src: url(../fonts/.ttf);
+}*/
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+img {
+  border: 0;
+}
+
+input {
+  line-height: normal;
+}
+/*End of CSS bug fixes*/
+
+
+
+.centerwrap {
+  max-width: 960px;
+  margin: auto;
+}
+
+.logo {
+  height: 36px;
+  margin-top: 14px;
+  margin-left: 14px;
+}
+
+
+nav {
+  background-color: transparent;
+  background-color: #1F2DAA;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: right;
+  padding: 0 12px 0 12px;
+}
+
+/*nav li a {
+  position: static;
+  display: block;
+  color: #eee;
+  padding: 20px 1vw;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 15px;
+}*/
+
+nav li a{
+  display: block;
+  color: #eee;
+  padding: 23px 16px 21px 16px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+nav li a:hover {
+  color: rgb(109, 109, 109);
+}
+
+.selectednavitem {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-bottom: 2px solid white;
+  color: #fff;
+}
+
+/*.splashscreenwrap {
+  max-widht:
+}*/
+
+.splashscreen {
+  background-color: #1F2DAA;
+  /*background-image: url("../img/eubg.JPG");*/
+  height: calc(100vh - 64px);
+  max-height: 1080px;
+  overflow: hidden;
+}
+
+australiamap {
+
+}
+
+
+.cardwrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 17vh;
+  max-width: 1060px;
+  margin: auto;
+}
+
+.card {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  background: #fff;
+  border-radius: 2px;
+  min-height: 260px;
+  width: 310px;
+  margin: 15px 15px 30px 15px;
+  text-align: left;
+  position: relative;
+}
+
+.card h2 {
+  color: #818181;
+  font-weight: 200;
+  font-size: 20px;
+  margin: 20px 0 0 20px;
+}
+
+.card h1 {
+  color: #1E1E1E;
+  font-size: 45px;
+  letter-spacing: 1px;
+  margin: 0 20px 10px 20px;;
+}
+
+.card p {
+  margin: 0 20px 30px 20px;
+  font-size: 16px;
+}
+
+.card h3 {
+  color: #818181;
+  margin: 0 20px 20px 20px;
+  color: #1F2DAA;
+  letter-spacing: 1px;
+}
+
+.cardbutton {
+  margin: 10px 0 20px 20px;
+  background-color: #3F51B5;
+  height: 36px;
+  min-width: 88px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  bottom: 0;
+  padding: 0 14px 0 14px;
+  position: absolute;
+  color: rgb(255, 255, 255);
+  border: none;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.cardlink {
+  color: #3F51B5;
+  height: 36px;
+  font-weight: 500;
+  text-transform: uppercase;
+  min-width: 88px;
+  align-items: center;
+  display: flex;
+  border-radius: 2px;
+  font-weight: 14px;
+  padding: 0 14px 0 14px;
+}
+
+.cardbutton img {
+  height: 16px;
+  margin-left: 5px;
+}
+
+.contentsection {
+  margin: auto;
+  max-width: 960px;
+}
+
+.ipsection {
+  text-align: left;
+  background-color: #3a47b9;
+  display: flex;
+  max-width: 820px;
+  margin: 50px auto;
+  justify-content: center;
+  color: rgb(214, 214, 214);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border-radius: 2px;
+  display: block;
+  padding: 20px;
+}
+
+.ipsection h3 {
+  color: white;
+  font-weight: 100;
+
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+.textarea .ipsection p {
+  color: rgb(207, 207, 207);
+  margin-bottom: 0;
+}
+
+.textarea h1 {
+  font-weight: 400;
+  font-size: 60px;
+  padding: 30px;
+}
+
+.textarea {
+  margin: auto;
+  max-width: 860px;
+  padding: 20px 20px 0px 20px;
+}
+
+.textarea h2 {
+  margin-top: 40px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.textarea p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+
+.textarea i {
+  line-height: 2.8;
+  margin-left: 10px;
+}
+
+.textarea ul {
+  color: #666;
+  line-height: 1.8;
+  list-style: none;
+}
+
+.textarea a {
+  background-color: transparent;
+  color: inherit;
+  border-bottom: 1px solid #666;
+}
+
+.marker {
+  display: inline-block;
+  margin: auto 0px auto 0px;
+  vertical-align: middle;
+}
+
+.highlight {
+  background-color: #dbe9fb;
+}
+
+.videowrap {
+  max-width: 600px;
+  padding-bottom: 20px;
+  justify-content: flex-start;
+}
+
+.youtube-video {
+  position: relative;
+padding-bottom: 52%; /* 16:9 */
+padding-top: 25px;
+height: 0;
+margin: auto;
+}
+
+.youtube-video iframe, .video-container object, .video-container embed {
+  position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+
+.supportersection {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.supporterwrapper {
+  justify-content: flex-end;
+  position: relative;
+  min-height: 300px;
+}
+
+.supportbutton {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.supportersection h3 {
+  text-align: center;
+  font-weight: 400;
+  padding-top: 55px;
+  align-self: center;
+}
+
+.supportersection ul {
+  list-style: initial;
+  margin: auto;
+  padding-top: 5px;
+  padding-bottom: 30px;
+  max-width: 450px;
+  text-align: left;
+}
+
+.supportersection li {
+  margin-top: 15px;
+}
+
+.supportbutton a {
+  background-color: #1F2DAA;
+  height: 36px;
+  min-width: 88px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  bottom: 0;
+  padding: 0 14px 0 14px;
+  position: absolute;
+  color: rgb(255, 255, 255);
+  border: none;
+  font-weight: 500;
+  text-transform: uppercase;
+}

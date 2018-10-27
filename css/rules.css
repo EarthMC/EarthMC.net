@@ -1,0 +1,43 @@
+.wrap {
+    max-width: 860px;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: rgb(24, 24, 24);
+}
+
+section {
+    margin-bottom: 80px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
+
+h3 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-top: 0;
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+.innerul li {
+    list-style: circle;
+    margin-top: 5px;
+}
+
+li {
+    margin-top: 20px;
+}
+
+
