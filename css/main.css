@@ -260,6 +260,7 @@ australiamap {
   margin: auto;
   max-width: 860px;
   padding: 20px 20px 0px 20px;
+  margin-bottom: 300px;
 }
 
 .textarea h2 {
