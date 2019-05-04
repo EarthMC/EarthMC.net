@@ -302,10 +302,7 @@ nav li a:hover {
 
 /* Markdown CSS */
 .highlight-code {
-  margin-top: 0;
-  margin-right: 0;
-  margin-left: 0;
-  margin-bottom: 0;
+  margin: 0;
   padding: 0 0 0 1.5rem;
 }
 
