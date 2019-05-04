@@ -1,7 +1,12 @@
 /*Fixing CSS bugs*/
 * {
-margin: 0;
-padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-kerning: auto;
 }
 
 body {
@@ -13,14 +18,6 @@ body {
 
 html {
     overflow-y: scroll;
-}
-
-* {
-  box-sizing: border-box;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-kerning: auto;
 }
 
 /*@font-face {
@@ -53,7 +50,6 @@ input {
 /*End of CSS bug fixes*/
 
 
-
 .centerwrap {
   max-width: 960px;
   margin: auto;
@@ -64,7 +60,6 @@ input {
   margin-top: 14px;
   margin-left: 14px;
 }
-
 
 nav {
   background-color: transparent;
@@ -84,18 +79,7 @@ nav li {
   padding: 0 12px 0 12px;
 }
 
-/*nav li a {
-  position: static;
-  display: block;
-  color: #eee;
-  padding: 20px 1vw;
-  text-decoration: none;
-  letter-spacing: 1px;
-  font-weight: 500;
-  font-size: 15px;
-}*/
-
-nav li a{
+nav li a {
   display: block;
   color: #eee;
   padding: 23px 16px 21px 16px;
@@ -118,9 +102,6 @@ nav li a:hover {
   color: #fff;
 }
 
-/*.splashscreenwrap {
-  max-widht:
-}*/
 
 .splashscreen {
   background-color: #1F2DAA;
@@ -129,11 +110,6 @@ nav li a:hover {
   max-height: 1080px;
   overflow: hidden;
 }
-
-australiamap {
-
-}
-
 
 .cardwrap {
   display: flex;
@@ -322,4 +298,75 @@ australiamap {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+/* Markdown CSS */
+.highlight-code {
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  padding: 0 0 0 1.5rem;
+}
+
+.highlight-code .code-bg {
+  display: block;
+  font-size: 87.5%;
+  color: #fff;
+  background: rgb(29, 29, 29);
+  border-radius: 4px;
+  padding: 8px 8px 8px 10px;
+}
+
+.markdown {
+  font-family: 'PT Mono', monospace;
+  border-radius: 4px;
+  line-height: 1.3rem;
+}
+
+.code-bg .markdown::after {
+  float: clear;
+}
+
+.code-bg .markdown > span {
+  color: rgb(2, 160, 252);
+  font-weight: bold;
+}
+
+/* FAQ */
+.main-header {
+  margin-top: 5rem;
+  margin-bottom: 2.5rem;
+}
+
+.main-header h2 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.textarea .faq {
+  padding-left: 0.3rem;
+}
+
+.faq h4 {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  margin-top: 2.5rem;
+  font-weight: 500;
+}
+
+.faq p {
+  margin-bottom: 0.4rem;
+  margin-top: 0.4rem;
+  font-size: 1.1rem;
+}
+
+.faq a {
+  color: rgb(66, 134, 244);
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.faq a:hover {
+  text-decoration: underline;
 }
