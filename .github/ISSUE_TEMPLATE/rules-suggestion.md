@@ -17,3 +17,6 @@ Write your opinion on why this rule will be better for the community.
 
 **Do you think this will benefit both the staff and the players**
 Describe how both parties will benefit from this rule.
+
+
+**Please use https://github.com/EarthMC/Issue-Tracker for issues other than the EarthMC.net website**
