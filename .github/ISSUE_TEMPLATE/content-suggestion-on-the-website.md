@@ -1,6 +1,6 @@
 ---
-name: Content suggestion on the website
-about: Suggest an idea/edit on the website
+name: Content suggestion for the website
+about: Suggest an idea/edit for the website
 title: ''
 labels: ''
 assignees: ''
