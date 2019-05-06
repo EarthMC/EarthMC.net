@@ -7,8 +7,8 @@ assignees: ''
 
 ---
 
-**Describe the rule here with example**
-A clear and concise description of the rule. Add examples to make it obvious.
+**Exact wording of the rule**
+Exactly how the rule should be written on the rules page.
 
 **How will this rule affect the community**
 Write your opinion on why this rule will be better for the community.
