@@ -32,12 +32,26 @@
         <ul class="centerwrap">
             <!-- Logo -->
             <a href="index.html"><img class="logo" src="img/logo.png" alt="earthmc logo"></a>
+            <div onclick="toggleMenu()" class="sm-menu"></div>
             <!-- End logo -->
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a target="_blank" href="https://earthmc.wikia.com">Wiki</a></li>
-            <li><a href="rules.html">Rules</a></li>
-            <li><a target="_blank" href="https://earthmc.net/map/">Map</a></li>
-            <li><a href="https://store.earthmc.net">Store</a></li>
+            <!-- Large screen nav -->
+            <div class="lg-nav">
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a target="_blank" href="https://earthmc.wikia.com">Wiki</a></li>
+                <li><a href="rules.html">Rules</a></li>
+                <li><a target="_blank" href="https://earthmc.net/map/">Map</a></li>
+                <li><a href="https://store.earthmc.net">Store</a></li>
+            </div>
+            <!-- End large screen nav -->
+            <!-- Small screen nav -->
+            <div id="toggleMenu" class="sm-nav">
+                <li><a href="https://store.earthmc.net">Store</a></li>
+                <li><a target="_blank" href="https://earthmc.net/map/">Map</a></li>
+                <li><a href="rules.html">Rules</a></li>
+                <li><a target="_blank" href="https://earthmc.wikia.com">Wiki</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </div>
+            <!-- End Small screen nav -->
         </ul>
     </nav>
 
@@ -240,5 +254,6 @@
         </p>
     </section>
 </div>
+<script src="js/main.js"></script>
 </body>
 </html>

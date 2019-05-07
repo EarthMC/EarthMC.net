@@ -43,3 +43,7 @@ li {
 nav > ul > li {
     margin-top: 0;
 }
+
+nav > ul > .sm-nav > li {
+    margin-top: 0px;
+}
