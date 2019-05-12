@@ -403,7 +403,7 @@ nav > ul > .sm-nav {
     position: relative;
   }
 
-  nav > ul > #toggleMenu {
+  nav > ul > #sm-nav-menu {
     display: none;
   }
 
