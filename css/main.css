@@ -385,14 +385,23 @@ nav > ul > .sm-nav {
 /* Less than 768px */
 @media (max-width: 767.98px) {
 
+  #navigation {
+    min-height: 60px;
+  }
+
   nav .sm-menu {
     display: block;
     background-image: url("../img/bars-solid.svg"); background-repeat: no-repeat;
     float: right;
     width: 26px;
     height: 26px;
-    margin: 12px 12px;
+    margin-top: 17px;
+    margin-right: 14px;
     cursor: pointer;
+  }
+
+  nav .sm-menu::after {
+    float: clear;
   }
 
   nav > ul > .lg-nav {
@@ -401,6 +410,13 @@ nav > ul > .sm-nav {
 
   nav > ul > .sm-nav {
     position: relative;
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  nav li {
+    float: none;
   }
 
   nav > ul > #sm-nav-menu {
@@ -410,6 +426,7 @@ nav > ul > .sm-nav {
   nav > ul > .sm-nav > li {
     width: 100%;
     text-align: center;
+    line-height: 18px;
   }
 
   nav > ul > .sm-nav > li > a {

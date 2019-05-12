@@ -30,8 +30,8 @@
         <script>
         $(window).on( "load", function(){
             $(window).bind("resize", function(){
-                if ($("#navigation").width() > 767) {
-                    $(".sm-nav").hide();
+                if ($(window).outerWidth() > 767.98) {
+                    $(".sm-nav").css("display", "none");
                 } else {
                 }
             })
