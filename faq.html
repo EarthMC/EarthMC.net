@@ -25,6 +25,19 @@
         <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
         <link rel="icon" type="image/ico" href="img/favicon.ico">
 
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script>
+        $(window).on( "load", function(){
+            $(window).bind("resize", function(){
+                if ($(window).outerWidth() > 767.98) {
+                    $(".sm-nav").css("display", "none");
+                } else {
+                }
+            })
+        });
+        </script>
+
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -36,7 +49,7 @@
             <ul class="centerwrap">
                 <!-- Logo -->
                 <a href="index.html"><img class="logo" src="img/logo.png" alt="earthmc logo"></a>
-                <div onclick="toggleMenu()" class="sm-menu"></div>
+                <div id="toggleMenu" class="sm-menu"></div>
                 <!-- End logo -->
                 <!-- Large screen nav -->
                 <div class="lg-nav">
@@ -48,7 +61,7 @@
                 </div>
                 <!-- End large screen nav -->
                 <!-- Small screen nav -->
-                <div id="toggleMenu" class="sm-nav">
+                <div id="sm-nav-menu" class="sm-nav">
                     <li><a href="https://store.earthmc.net">Store</a></li>
                     <li><a target="_blank" href="https://earthmc.net/map/">Map</a></li>
                     <li><a href="rules.html">Rules</a></li>

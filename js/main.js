@@ -1,9 +1,5 @@
-function toggleMenu() {
-    var x=document.getElementById("toggleMenu");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    }
-    else {
-        x.style.display = "block";
-    }
-}
+$(document).ready(function(){
+    $("#toggleMenu").click(function(){
+        $("#sm-nav-menu").slideToggle(300);
+    });
+});
