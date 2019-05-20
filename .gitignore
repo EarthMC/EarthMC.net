@@ -9,3 +9,4 @@ pushAsFix.sh
 \.well-known/
 
 \.idea/
+.DS_Store
