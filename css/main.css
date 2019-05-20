@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+/*  box-sizing: border-box; */
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -20,23 +20,16 @@ html {
     overflow-y: scroll;
 }
 
-/*@font-face {
-    font-family: ;
-    src: url(../fonts/.ttf);
-}*/
-
 a {
   background-color: transparent;
   text-decoration: none;
 }
 
-a:active,
-a:hover {
+a:active, a:hover {
   outline: 0;
 }
 
-b,
-strong {
+b, strong {
   font-weight: bold;
 }
 
@@ -46,6 +39,10 @@ img {
 
 input {
   line-height: normal;
+}
+
+.clear {
+  clear: both;
 }
 /*End of CSS bug fixes*/
 
@@ -378,6 +375,56 @@ nav > ul > .sm-nav {
 
 .faq a:hover {
   text-decoration: underline;
+}
+
+/* Recipes */
+.recipe-boxes {
+  float: left;
+  margin-bottom: 20px;
+}
+
+.grid {
+  width: 175px;
+}
+
+.grid h4 {
+  color: rgb(75, 75, 75);
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.grid-element {
+  background-color: #8b8b8b;
+  border-top: thick double #373737;
+  border-left: thick double #373737;
+  border-right: double #FFFFFF;
+  border-bottom: double #FFFFFF;
+  width: 36px;
+  height: 36px;
+  float: left;
+}
+
+.grid-element .tooltip {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  margin-top: -30px;
+}
+
+.grid-element:hover .tooltip, .grid-element:active .tooltip {
+  visibility: visible;
+}
+
+img.displayed {
+  display: block;
+  margin: auto;
+  padding: 2px;
 }
 
 /* Responsive */
