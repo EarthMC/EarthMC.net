@@ -406,6 +406,7 @@ nav > ul > .sm-nav {
 
 .grid-element .tooltip {
   visibility: hidden;
+  opacity: 0;
   width: 120px;
   background-color: black;
   color: #fff;
@@ -415,10 +416,13 @@ nav > ul > .sm-nav {
   position: absolute;
   z-index: 1;
   margin-top: -30px;
+  margin-left: -40px;
 }
 
 .grid-element:hover .tooltip, .grid-element:active .tooltip {
   visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s;
 }
 
 img.displayed {
@@ -483,5 +487,10 @@ img.displayed {
 
   nav > ul > .sm-nav > li:nth-last-child(1) {
     margin-bottom: 20px;
+  }
+
+  /* Recipes */
+  .grid {
+    width: 159px;
   }
 }
