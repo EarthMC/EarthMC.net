@@ -78,6 +78,7 @@ nav ul {
 nav li {
   float: right;
   padding: 0 12px 0 12px;
+  margin-top: 0px;
 }
 
 nav li a {
