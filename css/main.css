@@ -317,10 +317,13 @@ nav > ul > .sm-nav {
 
 .highlight-code .code-bg {
   display: block;
-  font-size: 87.5%;
-  color: #fff;
-  background: rgb(29, 29, 29);
-  border-radius: 4px;
+  font-size: 88%;
+  color: rgb(74, 158, 217);
+  background: rgb(240, 241, 241);
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(228, 230, 232);
+  border-radius: 5px;
   padding: 8px 8px 8px 10px;
 }
 
