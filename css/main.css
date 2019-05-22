@@ -84,7 +84,7 @@ nav li {
 nav li a {
   display: block;
   color: #eee;
-  padding: 23px 16px 21px 16px;
+  padding: 23px 9px 21px 9px;
   text-decoration: none;
   letter-spacing: 1px;
   font-weight: 500;
@@ -388,13 +388,14 @@ nav > ul > .sm-nav {
 }
 
 .grid {
-  width: 175px;
+  width: 165px;
 }
 
-.grid h4 {
+.grid h5 {
   color: rgb(75, 75, 75);
   font-weight: 500;
   margin-bottom: 5px;
+  font-size: 1rem;
 }
 
 .grid-element {
