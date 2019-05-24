@@ -371,6 +371,10 @@ nav > ul > .sm-nav {
   font-size: 1.1rem;
 }
 
+.faq p span {
+  color: rgb(74, 158, 217);
+}
+
 .faq a {
   color: rgb(66, 134, 244);
   text-decoration: none;
