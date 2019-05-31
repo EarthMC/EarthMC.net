@@ -1,2 +1,2 @@
-# earthmc.net
+# EarthMC.net
 EarthMC website beta
