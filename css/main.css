@@ -318,7 +318,7 @@ nav > ul > .sm-nav {
 
 .highlight-code .code-bg {
   display: block;
-  font-size: 88%;
+  font-size: 0.9rem;
   color: rgb(74, 158, 217);
   background: rgb(240, 241, 241);
   border-style: solid;
