@@ -9,6 +9,8 @@
 
 section {
     margin-bottom: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 h1 {
@@ -28,7 +30,8 @@ p {
 
 ul {
     list-style-type: none;
-    padding-left: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .innerul li {
@@ -48,10 +51,11 @@ nav > ul > .sm-nav > li {
     margin-top: 0px;
 }
 
-.sub_list li {
-    margin-top: 5px;
+.sub-list {
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
-.sub_list li:first-child {
-    margin-top: 20px;
+.sub-list li {
+    margin-top: 5px;
 }
