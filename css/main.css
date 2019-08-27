@@ -61,7 +61,8 @@ input {
 nav {
   background-color: transparent;
   background-color: #1F2DAA;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  /* box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); */
+  position: relative;
 }
 
 nav .sm-menu {
@@ -93,7 +94,7 @@ nav li a {
 }
 
 nav li a:hover {
-  color: rgb(109, 109, 109);
+  color: rgb(170, 170, 170);
 }
 
 nav > ul > .lg-nav {
@@ -102,6 +103,32 @@ nav > ul > .lg-nav {
 
 nav > ul > .sm-nav {
   display: none;
+}
+
+.dropdown > .sub-menu {
+  display: none;
+  position: absolute;
+  background-color: rgb(138, 149, 255);
+  text-align: center;
+}
+
+.dropdown:hover > .sub-menu {
+  display: block;
+}
+
+.sub-menu > li {
+  float: none;
+  padding: 0;
+}
+
+.sub-menu > li > a {
+  color: rgb(255, 255, 255);
+  padding: 18px 20px;
+}
+
+.sub-menu > li > a:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(60, 80, 255);
 }
 
 .selectednavitem {
@@ -496,6 +523,22 @@ img.displayed {
 
   nav > ul > .sm-nav > li:nth-last-child(1) {
     margin-bottom: 20px;
+  }
+
+  .sm-nav .dropdown > ul {
+    display: none;
+  }
+
+  .sm-nav .dropdown > ul > li {
+    padding: 0;
+  }
+
+  .sm-nav .dropdown > ul > li > a {
+    padding: 5px;
+  }
+
+  .caret {
+    font-size: 10px;
   }
 
   /* Recipes */
