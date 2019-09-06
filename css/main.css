@@ -110,6 +110,7 @@ nav > ul > .sm-nav {
   position: absolute;
   background-color: rgb(138, 149, 255);
   text-align: center;
+  border-radius: 2px;
 }
 
 .dropdown:hover > .sub-menu {
