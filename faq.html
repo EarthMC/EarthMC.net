@@ -14,26 +14,19 @@
 
         <!-- Stylesheets -->
         <link type="text/css" rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
         <link type="text/css" rel="stylesheet" href="css/main.css">
 
         <!-- Favicons -->
         <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-        <link rel="icon" type="image/ico" href="img/favicon.ico">
+        <link rel="icon" type="image/ico" href="favicon.ico">
 
         <!-- jQuery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-        <script>
-        $(window).on( "load", function(){
-            $(window).bind("resize", function(){
-                if ($(window).outerWidth() > 767.98) {
-                    $(".sm-nav").css("display", "none");
-                } else {
-                }
-            })
-        });
-        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- jQuery UI -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
     </head>
     <body>
@@ -88,344 +81,322 @@
                     <div class='grid'>
                     <h5>Powered Rails</h5>
                     <div class='grid-element'>
-                        <span class="tooltip">Iron Ingot</span>
-                        <img class ="displayed" src='img/items/iron_ingot.png' />
+                        <img title="Iron Ingot" class="displayed" src='img/items/iron_ingot.png' />
                     </div>
                     <div class='grid-element'>
-                        <img class ="displayed" src='img/items/empty.png' />
+                        <img class="displayed" src='img/items/empty.png' />
                     </div>
                     <div class='grid-element'>
-                        <span class="tooltip">Iron Ingot</span>
-                        <img class ="displayed" src='img/items/iron_ingot.png' />
+                        <img title="Iron Ingot" class="displayed" src='img/items/iron_ingot.png' />
                     </div>
                     <div class='grid-element'>
-                        <span class="tooltip">Iron Ingot</span>
-                        <img class ="displayed" src='img/items/iron_ingot.png' />
+                        <img title="Iron Ingot" class="displayed" src='img/items/iron_ingot.png' />
                     </div>
                     <div class='grid-element'>
-                        <span class="tooltip">Stick</span>
-                        <img class ="displayed" src='img/items/stick.png' />
+                        <img title="Stick" class="displayed" src='img/items/stick.png' />
                     </div>
                     <div class='grid-element'>
-                        <span class="tooltip">Iron Ingot</span>
-                        <img class ="displayed" src='img/items/iron_ingot.png' />
+                        <img title="Iron Ingot" class="displayed" src='img/items/iron_ingot.png' />
                     </div>
                     <div class='grid-element'>
-                        <span class="tooltip">Iron Ingot</span>
-                        <img class ="displayed" src='img/items/iron_ingot.png' />
+                        <img title="Iron Ingot" class="displayed" src='img/items/iron_ingot.png' />
                     </div>
                     <div class='grid-element'>
-                        <span class="tooltip">Redstone Dust</span>
-                        <img class ="displayed" src='img/items/redstone_dust.png' />
+                        <img title="Redstone Dust" class="displayed" src='img/items/redstone_dust.png' />
                     </div>
                     <div class='grid-element'>
-                        <span class="tooltip">Iron Ingot</span>
-                        <img class ="displayed" src='img/items/iron_ingot.png' />
+                        <img title="Iron Ingot" class="displayed" src='img/items/iron_ingot.png' />
                     </div>
                     </div>
                 </div>
                 <div class="recipe-boxes">
                     <div class='grid'>
-                    <h5>Cobweb</h5>
-                    <div class='grid-element'>
-                        <span class="tooltip">String</span>
-                        <img class ="displayed" src='img/items/string.png' />
+                        <h5>Cobweb</h5>
+                        <div class='grid-element'>
+                            <img title="String" class="displayed" src='img/items/string.png' />
+                        </div>
+                        <div class='grid-element'>
+                            <img title="String" class="displayed" src='img/items/string.png' />
+                        </div>
+                        <div class='grid-element'>
+                            <img title="String" class="displayed" src='img/items/string.png' />
+                        </div>
+                        <div class='grid-element'>
+                            <img title="String" class="displayed" src='img/items/string.png' />
+                        </div>
+                        <div class='grid-element'>
+                            <img title="String" class="displayed" src='img/items/string.png' />
+                        </div>
+                        <div class='grid-element'>
+                            <img title="String" class="displayed" src='img/items/string.png' />
+                        </div>
+                        <div class='grid-element'>
+                            <img title="String" class="displayed" src='img/items/string.png' />
+                        </div>
+                        <div class='grid-element'>
+                            <img title="String" class="displayed" src='img/items/string.png' />
+                        </div>
+                        <div class='grid-element'>
+                            <img title="String" class="displayed" src='img/items/string.png' />
+                        </div>
                     </div>
-                    <div class='grid-element'>
-                        <span class="tooltip">String</span>
-                        <img class ="displayed" src='img/items/string.png' />
-                    </div>
-                    <div class='grid-element'>
-                        <span class="tooltip">String</span>
-                        <img class ="displayed" src='img/items/string.png' />
-                    </div>
-                    <div class='grid-element'>
-                        <span class="tooltip">String</span>
-                        <img class ="displayed" src='img/items/string.png' />
-                    </div>
-                    <div class='grid-element'>
-                        <span class="tooltip">String</span>
-                        <img class ="displayed" src='img/items/string.png' />
-                    </div>
-                    <div class='grid-element'>
-                        <span class="tooltip">String</span>
-                        <img class ="displayed" src='img/items/string.png' />
-                    </div>
-                    <div class='grid-element'>
-                        <span class="tooltip">String</span>
-                        <img class ="displayed" src='img/items/string.png' />
-                    </div>
-                    <div class='grid-element'>
-                        <span class="tooltip">String</span>
-                        <img class ="displayed" src='img/items/string.png' />
-                    </div>
-                    <div class='grid-element'>
-                        <span class="tooltip">String</span>
-                        <img class ="displayed" src='img/items/string.png' />
-                    </div>
-                    </div>
-                    </div>
-                    <div class="recipe-boxes">
+                </div>
+                <div class="recipe-boxes">
                     <div class='grid'>
                         <h5>Ink Sac</h5>
                         <div class='grid-element'>
-                        <img class ="displayed" src='img/items/empty.png' />
+                            <img class="displayed" src='img/items/empty.png' />
                         </div>
                         <div class='grid-element'>
-                        <img class ="displayed" src='img/items/empty.png' />
+                            <img class="displayed" src='img/items/empty.png' />
                         </div>
                         <div class='grid-element'>
-                        <img class ="displayed" src='img/items/empty.png' />
+                            <img class="displayed" src='img/items/empty.png' />
                         </div>
                         <div class='grid-element'>
-                        <img class ="displayed" src='img/items/empty.png' />
+                            <img class="displayed" src='img/items/empty.png' />
                         </div>
                         <div class='grid-element'>
-                        <span class="tooltip">Coal/Charcoal</span>
-                        <img class ="displayed" src='img/items/coal.png' />
+                            <img title="Coal/Charcoal" class="displayed" src='img/items/coal.png' />
                         </div>
                         <div class='grid-element'>
-                        <img class ="displayed" src='img/items/empty.png' />
+                            <img class="displayed" src='img/items/empty.png' />
                         </div>
                         <div class='grid-element'>
-                        <img class ="displayed" src='img/items/empty.png' />
+                            <img class="displayed" src='img/items/empty.png' />
                         </div>
                         <div class='grid-element'>
-                        <img class ="displayed" src='img/items/empty.png' />
+                            <img class="displayed" src='img/items/empty.png' />
                         </div>
                         <div class='grid-element'>
-                        <img class ="displayed" src='img/items/empty.png' />
+                            <img class="displayed" src='img/items/empty.png' />
                         </div>
                     </div>
-                    </div>
-                    <div class="recipe-boxes">
+                </div>
+                <div class="recipe-boxes">
                     <div class='grid'>
                         <h5>Prismarine Shard</h5>
                         <div class='grid-element'>
-                        <img class ="displayed" src='img/items/empty.png' />
+                            <img class="displayed" src='img/items/empty.png' />
                         </div>
                         <div class='grid-element'>
-                        <img class ="displayed" src='img/items/empty.png' />
+                            <img class="displayed" src='img/items/empty.png' />
                         </div>
                         <div class='grid-element'>
-                        <img class ="displayed" src='img/items/empty.png' />
+                            <img class="displayed" src='img/items/empty.png' />
                         </div>
                         <div class='grid-element'>
-                        <span class="tooltip">Sand</span>
-                        <img class ="displayed" src='img/items/sand.png' />
+                            <img title="Sand" class="displayed" src='img/items/sand.png' />
                         </div>
                         <div class='grid-element'>
-                        <span class="tooltip">Dirt</span>
-                        <img class ="displayed" src='img/items/dirt.png' />
+                            <img title="Dirt" class="displayed" src='img/items/dirt.png' />
                         </div>
                         <div class='grid-element'>
-                        <span class="tooltip">Lapis Lazuli</span>
-                        <img class ="displayed" src='img/items/lapislazuli.png' />
+                            <img title="Lapis Lazuli" class="displayed" src='img/items/lapislazuli.png' />
                         </div>
                         <div class='grid-element'>
-                        <img class ="displayed" src='img/items/empty.png' />
+                            <img class="displayed" src='img/items/empty.png' />
                         </div>
                         <div class='grid-element'>
-                        <img class ="displayed" src='img/items/empty.png' />
+                            <img class="displayed" src='img/items/empty.png' />
                         </div>
                         <div class='grid-element'>
-                        <img class ="displayed" src='img/items/empty.png' />
+                            <img class="displayed" src='img/items/empty.png' />
                         </div>
                     </div>
-                    </div>
-                    <div class="recipe-boxes">
+                </div>
+                <div class="recipe-boxes">
                     <div class='grid'>
                         <h5>Prismarine Crystal</h5>
                         <div class='grid-element'>
-                        <img class ="displayed" src='img/items/empty.png' />
+                        <img class="displayed" src='img/items/empty.png' />
                         </div>
                         <div class='grid-element'>
-                        <img class ="displayed" src='img/items/empty.png' />
+                        <img class="displayed" src='img/items/empty.png' />
                         </div>
                         <div class='grid-element'>
-                        <img class ="displayed" src='img/items/empty.png' />
+                        <img class="displayed" src='img/items/empty.png' />
                         </div>
                         <div class='grid-element'>
-                        <img class ="displayed" src='img/items/empty.png' />
+                        <img class="displayed" src='img/items/empty.png' />
                         </div>
                         <div class='grid-element'>
-                        <span class="tooltip">Prismarine Shard</span>
-                        <img class ="displayed" src='img/items/prismarine_shard.png' />
+                        <img title="Prismarine Shard" class="displayed" src='img/items/prismarine_shard.png' />
                         </div>
                         <div class='grid-element'>
-                        <span class="tooltip">Glowstone Dust</span>
-                        <img class ="displayed" src='img/items/glowstone_dust.png' />
+                        <img title="Glowstone Dust" class="displayed" src='img/items/glowstone_dust.png' />
                         </div>
                         <div class='grid-element'>
-                        <img class ="displayed" src='img/items/empty.png' />
+                        <img class="displayed" src='img/items/empty.png' />
                         </div>
                         <div class='grid-element'>
-                        <img class ="displayed" src='img/items/empty.png' />
+                        <img class="displayed" src='img/items/empty.png' />
                         </div>
                         <div class='grid-element'>
-                        <img class ="displayed" src='img/items/empty.png' />
+                        <img class="displayed" src='img/items/empty.png' />
                         </div>
                     </div>
-                    </div>
-                    <div class="recipe-boxes">
+                </div>
+                <div class="recipe-boxes">
                     <div class='grid'>
                         <h5>Packed Ice</h5>
                         <div class='grid-element'>
-                        <span class="tooltip">Ice</span>
-                        <img class ="displayed" src='img/items/ice.png' />
+                            <img title="Ice" class="displayed" src='img/items/ice.png' />
                         </div>
                         <div class='grid-element'>
-                        <span class="tooltip">Ice</span>
-                        <img class ="displayed" src='img/items/ice.png' />
+                            <img title="Ice" class="displayed" src='img/items/ice.png' />
                         </div>
                         <div class='grid-element'>
-                        <span class="tooltip">Ice</span>
-                        <img class ="displayed" src='img/items/ice.png' />
+                            <img title="Ice" class="displayed" src='img/items/ice.png' />
                         </div>
                         <div class='grid-element'>
-                        <span class="tooltip">Ice</span>
-                        <img class ="displayed" src='img/items/ice.png' />
+                            <img title="Ice" class="displayed" src='img/items/ice.png' />
                         </div>
                         <div class='grid-element'>
-                        <span class="tooltip">Ice</span>
-                        <img class ="displayed" src='img/items/ice.png' />
+                            <img title="Ice" class="displayed" src='img/items/ice.png' />
                         </div>
                         <div class='grid-element'>
-                        <span class="tooltip">Ice</span>
-                        <img class ="displayed" src='img/items/ice.png' />
+                            <img title="Ice" class="displayed" src='img/items/ice.png' />
                         </div>
                         <div class='grid-element'>
-                        <span class="tooltip">Ice</span>
-                        <img class ="displayed" src='img/items/ice.png' />
+                            <img title="Ice" class="displayed" src='img/items/ice.png' />
                         </div>
                         <div class='grid-element'>
-                        <span class="tooltip">Ice</span>
-                        <img class ="displayed" src='img/items/ice.png' />
+                            <img title="Ice" class="displayed" src='img/items/ice.png' />
                         </div>
                         <div class='grid-element'>
-                        <span class="tooltip">Ice</span>
-                        <img class ="displayed" src='img/items/ice.png' />
+                            <img title="Ice" class="displayed" src='img/items/ice.png' />
                         </div>
                     </div>
-                    </div>
-                    <div class="recipe-boxes">
+                </div>
+                <div class="recipe-boxes">
                     <div class='grid'>
                         <h5>Blue Ice</h5>
                         <div class='grid-element'>
-                        <span class="tooltip">Packed Ice</span>
-                        <img class ="displayed" src='img/items/packed_ice.png' />
+                            <img title="Packed Ice" class="displayed" src='img/items/packed_ice.png' />
                         </div>
                         <div class='grid-element'>
-                        <span class="tooltip">Packed Ice</span>
-                        <img class ="displayed" src='img/items/packed_ice.png' />
+                            <img title="Packed Ice" class="displayed" src='img/items/packed_ice.png' />
                         </div>
                         <div class='grid-element'>
-                        <span class="tooltip">Packed Ice</span>
-                        <img class ="displayed" src='img/items/packed_ice.png' />
+                            <img title="Packed Ice" class="displayed" src='img/items/packed_ice.png' />
                         </div>
                         <div class='grid-element'>
-                        <span class="tooltip">Packed Ice</span>
-                        <img class ="displayed" src='img/items/packed_ice.png' />
+                            <img title="Packed Ice" class="displayed" src='img/items/packed_ice.png' />
                         </div>
                         <div class='grid-element'>
-                        <span class="tooltip">Packed Ice</span>
-                        <img class ="displayed" src='img/items/packed_ice.png' />
+                            <img title="Packed Ice" class="displayed" src='img/items/packed_ice.png' />
                         </div>
                         <div class='grid-element'>
-                        <span class="tooltip">Packed Ice</span>
-                        <img class ="displayed" src='img/items/packed_ice.png' />
+                            <img title="Packed Ice" class="displayed" src='img/items/packed_ice.png' />
                         </div>
                         <div class='grid-element'>
-                        <span class="tooltip">Packed Ice</span>
-                        <img class ="displayed" src='img/items/packed_ice.png' />
+                            <img title="Packed Ice" class="displayed" src='img/items/packed_ice.png' />
                         </div>
                         <div class='grid-element'>
-                        <span class="tooltip">Packed Ice</span>
-                        <img class ="displayed" src='img/items/packed_ice.png' />
+                            <img title="Packed Ice" class="displayed" src='img/items/packed_ice.png' />
                         </div>
                         <div class='grid-element'>
-                        <span class="tooltip">Packed Ice</span>
-                        <img class ="displayed" src='img/items/packed_ice.png' />
+                            <img title="Packed Ice" class="displayed" src='img/items/packed_ice.png' />
                         </div>
                     </div>
-                    </div>
-                    <div class="recipe-boxes">
+                </div>
+                <div class="recipe-boxes">
                     <div class='grid'>
                         <h5>Coral Blocks</h5>
                         <div class='grid-element'>
-                        <img class ="displayed" src='img/items/empty.png' />
+                            <img class="displayed" src='img/items/empty.png' />
                         </div>
                         <div class='grid-element'>
-                        <img class ="displayed" src='img/items/empty.png' />
+                            <img class="displayed" src='img/items/empty.png' />
                         </div>
                         <div class='grid-element'>
-                        <img class ="displayed" src='img/items/empty.png' />
+                            <img class="displayed" src='img/items/empty.png' />
                         </div>
                         <div class='grid-element'>
-                        <img class ="displayed" src='img/items/empty.png' />
+                            <img class="displayed" src='img/items/empty.png' />
                         </div>
                         <div class='grid-element'>
-                        <span class="tooltip">Coral</span>
-                        <img class ="displayed" src='img/items/tube_coral.png' />
+                            <img title="Coral" class="displayed" src='img/items/tube_coral.png' />
                         </div>
                         <div class='grid-element'>
-                        <span class="tooltip">Coral</span>
-                        <img class ="displayed" src='img/items/tube_coral.png' />
+                            <img title="Coral" class="displayed" src='img/items/tube_coral.png' />
                         </div>
                         <div class='grid-element'>
-                        <img class ="displayed" src='img/items/empty.png' />
+                            <img class="displayed" src='img/items/empty.png' />
                         </div>
                         <div class='grid-element'>
-                        <span class="tooltip">Coral</span>
-                        <img class ="displayed" src='img/items/tube_coral.png' />
+                            <img title="Coral" class="displayed" src='img/items/tube_coral.png' />
                         </div>
                         <div class='grid-element'>
-                        <span class="tooltip">Coral</span>
-                        <img class ="displayed" src='img/items/tube_coral.png' />
+                            <img title="Coral" class="displayed" src='img/items/tube_coral.png' />
                         </div>
                     </div>
-                    </div>
-                    <div class="recipe-boxes">
+                </div>
+                <div class="recipe-boxes">
                     <div class='grid'>
                         <h5>End Stone</h5>
                         <div class='grid-element'>
-                        <span class="tooltip">Sand</span>
-                        <img class ="displayed" src='img/items/sand.png' />
+                            <img title="Sand" class="displayed" src='img/items/sand.png' />
                         </div>
                         <div class='grid-element'>
-                        <span class="tooltip">Sand</span>
-                        <img class ="displayed" src='img/items/sand.png' />
+                            <img title="Sand" class="displayed" src='img/items/sand.png' />
                         </div>
                         <div class='grid-element'>
-                        <span class="tooltip">Sand</span>
-                        <img class ="displayed" src='img/items/sand.png' />
+                            <img title="Sand" class="displayed" src='img/items/sand.png' />
                         </div>
                         <div class='grid-element'>
-                        <span class="tooltip">Sand</span>
-                        <img class ="displayed" src='img/items/sand.png' />
+                            <img title="Sand" class="displayed" src='img/items/sand.png' />
                         </div>
                         <div class='grid-element'>
-                        <span class="tooltip">Cobblestone</span>
-                        <img class ="displayed" src='img/items/cobblestone.png' />
+                            <img title="Cobblestone" class="displayed" src='img/items/cobblestone.png' />
                         </div>
                         <div class='grid-element'>
-                        <span class="tooltip">Sand</span>
-                        <img class ="displayed" src='img/items/sand.png' />
+                            <img title="Sand" class="displayed" src='img/items/sand.png' />
                         </div>
                         <div class='grid-element'>
-                        <span class="tooltip">Sand</span>
-                        <img class ="displayed" src='img/items/sand.png' />
+                            <img title="Sand" class="displayed" src='img/items/sand.png' />
                         </div>
                         <div class='grid-element'>
-                        <span class="tooltip">Sand</span>
-                        <img class ="displayed" src='img/items/sand.png' />
+                            <img title="Sand" class="displayed" src='img/items/sand.png' />
                         </div>
                         <div class='grid-element'>
-                        <span class="tooltip">Sand</span>
-                        <img class ="displayed" src='img/items/sand.png' />
+                            <img title="Sand" class="displayed" src='img/items/sand.png' />
                         </div>
                     </div>
+                </div>
+                <div class="recipe-boxes">
+                    <div class='grid'>
+                        <h5>End Rod</h5>
+                        <div class='grid-element'>
+                            <img title="Glowstone Dust" class="displayed" src='img/items/glowstone_dust.png' />
+                        </div>
+                        <div class='grid-element'>
+                            <img title="White Stained Glass" class="displayed" src='img/items/white_stained_glass.png' />
+                        </div>
+                        <div class='grid-element'>
+                            <img title="Glowstone Dust" class="displayed" src='img/items/glowstone_dust.png' />
+                        </div>
+                        <div class='grid-element'>
+                            <img title="Glowstone Dust" class="displayed" src='img/items/glowstone_dust.png' />
+                        </div>
+                        <div class='grid-element'>
+                            <img title="White Stained Glass" class="displayed" src='img/items/white_stained_glass.png' />
+                        </div>
+                        <div class='grid-element'>
+                            <img title="Glowstone Dust" class="displayed" src='img/items/glowstone_dust.png' />
+                        </div>
+                        <div class='grid-element'>
+                            <img title="Glowstone Dust" class="displayed" src='img/items/glowstone_dust.png' />
+                        </div>
+                        <div class='grid-element'>
+                            <img title="White Stained Glass" class="displayed" src='img/items/white_stained_glass.png' />
+                        </div>
+                        <div class='grid-element'>
+                            <img title="Glowstone Dust" class="displayed" src='img/items/glowstone_dust.png' />
+                        </div>
                     </div>
+                </div>
                     <div class="clear"></div>
                     <h4 id="shopsigns">2. How do I make trade sign?</h4>
                     <p>a. Place a sign. On the top line, write <span>[item]</span>. The text should appear purple.</p>
@@ -471,7 +442,8 @@
                     <h4>9. My town got deleted, why?</h4>
                     <p>Players are deleted from towns after 42 days of inactivity.</p>
                     <h4 id="mcmmo">10. What are the server's mcMMO settings?</h4>
-                    <p>Some of mcMMO abilities and skills are disabled to maintain game balance. Disabled skills are:</p>
+                    <p>Some of mcMMO abilities and skills are disabled to maintain game balance.</p>
+                    <p>Disabled skills are:</p>
                     <div class="highlight-code">
                         <div class="code-bg">
                             <code class="markdown">1. Unarmed (PVP)</code> <br>
@@ -493,5 +465,10 @@
             </div>
         </div>
         <script src="js/main.js"></script>
+        <script>
+            $(".displayed").tooltip({
+                track: true
+            });
+        </script>
     </body>
 </html>
