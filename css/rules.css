@@ -15,7 +15,6 @@ section {
 
 h1 {
     text-align: center;
-    margin-bottom: 80px;
     margin-top: 80px;
 }
 
@@ -58,4 +57,8 @@ nav > ul > .sm-nav > li {
 
 .sub-list li {
     margin-top: 5px;
+}
+
+.lang-selector {
+    margin-bottom: 40px;
 }
