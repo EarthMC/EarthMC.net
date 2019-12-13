@@ -147,6 +147,7 @@ nav > ul > .sm-nav {
   height: calc(100vh - 64px);
   max-height: 1080px;
   overflow: hidden;
+  margin-bottom: 0 !important;
 }
 
 .cardwrap {
@@ -181,7 +182,8 @@ nav > ul > .sm-nav {
   color: #1E1E1E;
   font-size: 45px;
   letter-spacing: 1px;
-  margin: 0 20px 10px 20px;;
+  margin: 0 20px 10px 20px;
+  text-align: left !important;
 }
 
 .card p {
@@ -264,6 +266,10 @@ nav > ul > .sm-nav {
   margin-bottom: 0;
 }
 
+#main-content {
+  padding: 0 !important;
+}
+
 .textarea h1 {
   font-weight: 400;
   font-size: 60px;
@@ -299,6 +305,11 @@ nav > ul > .sm-nav {
   color: #666;
   line-height: 1.8;
   list-style: none;
+  padding: 0 !important;
+}
+
+.textarea ul li {
+  margin-top: 0 !important;
 }
 
 .textarea a {

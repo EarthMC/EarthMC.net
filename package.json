@@ -1,0 +1,38 @@
+{
+  "name": "earthmc.net",
+  "version": "1.0.0",
+  "description": "EarthMC's main website",
+  "main": "src/index.js",
+  "scripts": {
+    "prod": "webpack --config webpack.prod.config.js",
+    "dev": "webpack --config webpack.dev.config.js",
+    "start:dev": "webpack-dev-server --config webpack.dev.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DasCodes/EarthMC.net.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DasCodes/EarthMC.net/issues"
+  },
+  "homepage": "https://github.com/DasCodes/EarthMC.net#readme",
+  "devDependencies": {
+    "css-loader": "^3.3.2",
+    "file-loader": "^5.0.2",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "normalize.css": "^8.0.1"
+  }
+}
