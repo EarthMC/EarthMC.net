@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DasCodes/EarthMC.net.git"
+    "url": "git+https://github.com/EarthMC/EarthMC.net.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "FixTheAdmin, KarlOfDuty, DasCodes",
+  "license": "GPL",
   "bugs": {
-    "url": "https://github.com/DasCodes/EarthMC.net/issues"
+    "url": "https://github.com/EarthMC/EarthMC.net/issues"
   },
-  "homepage": "https://github.com/DasCodes/EarthMC.net#readme",
+  "homepage": "https://github.com/EarthMC/EarthMC.net#readme",
   "devDependencies": {
     "css-loader": "^3.3.2",
     "file-loader": "^5.0.2",
