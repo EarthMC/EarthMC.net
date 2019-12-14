@@ -4,6 +4,7 @@ google5a865d23afb11e8e\.html
 classic/
 map/
 node_modules/
+dist/
 
 pushAsKarl.sh
 pushAsFix.sh
