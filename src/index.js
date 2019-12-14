@@ -1,7 +1,7 @@
-import 'normalize.css';
-import './css/main.css';
-import './css/rules.css';
-const $ = require('jquery');
+import "normalize.css";
+import "./css/main.css";
+import "./css/rules.css";
+const $ = require("jquery");
 
 $(document).ready(function(){
     $(window).bind("resize", function(){
