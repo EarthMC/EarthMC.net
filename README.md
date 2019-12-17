@@ -17,5 +17,4 @@ Run `npm install` to install all the dependencies.
 
 To start the development server run `npm run start:dev`. This will open a new development server on port `7000`. Visit [localhost:7000](http://localhost:7000) to view the site.
 
-Run `npm run dev` command to generate a development build.
-Run `npm run prod` command to generate a production build.
+Run `npm run dev` command to generate a development build and `npm run prod` to generate a production build.
