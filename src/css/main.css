@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-/*  box-sizing: border-box; */
+  /*  box-sizing: border-box; */
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -10,14 +10,14 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    color: #1E1E1E;
-    margin: 0;
-    background-color: #f3f3f3;
+  font-family: 'Roboto', sans-serif;
+  color: #1e1e1e;
+  margin: 0;
+  background-color: #f3f3f3;
 }
 
 html {
-    overflow-y: scroll;
+  overflow-y: scroll;
 }
 
 a {
@@ -25,11 +25,13 @@ a {
   text-decoration: none;
 }
 
-a:active, a:hover {
+a:active,
+a:hover {
   outline: 0;
 }
 
-b, strong {
+b,
+strong {
   font-weight: bold;
 }
 
@@ -60,7 +62,7 @@ input {
 
 nav {
   background-color: transparent;
-  background-color: #1F2DAA;
+  background-color: #1f2daa;
   /* box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); */
   position: relative;
 }
@@ -141,8 +143,25 @@ nav > ul > .sm-nav {
 }
 /* End navbar */
 
+/* Footer */
+footer {
+  background: #1f2daa;
+  padding: 8px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer h6,
+footer a {
+  color: #eee;
+  font-size: 13px;
+}
+
+/* Index */
+
 .splashscreen {
-  background-color: #1F2DAA;
+  background-color: #1f2daa;
   /*background-image: url("../img/eubg.JPG");*/
   height: calc(100vh - 64px);
   max-height: 1080px;
@@ -161,7 +180,7 @@ nav > ul > .sm-nav {
 }
 
 .card {
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   background: #fff;
   border-radius: 2px;
   min-height: 260px;
@@ -179,7 +198,7 @@ nav > ul > .sm-nav {
 }
 
 .card h1 {
-  color: #1E1E1E;
+  color: #1e1e1e;
   font-size: 45px;
   letter-spacing: 1px;
   margin: 0 20px 10px 20px;
@@ -194,13 +213,13 @@ nav > ul > .sm-nav {
 .card h3 {
   color: #818181;
   margin: 0 20px 20px 20px;
-  color: #1F2DAA;
+  color: #1f2daa;
   letter-spacing: 1px;
 }
 
 .cardbutton {
   margin: 10px 0 20px 20px;
-  background-color: #3F51B5;
+  background-color: #3f51b5;
   height: 36px;
   min-width: 88px;
   border-radius: 2px;
@@ -217,7 +236,7 @@ nav > ul > .sm-nav {
 }
 
 .cardlink {
-  color: #3F51B5;
+  color: #3f51b5;
   height: 36px;
   font-weight: 500;
   text-transform: uppercase;
@@ -247,7 +266,7 @@ nav > ul > .sm-nav {
   margin: 50px auto;
   justify-content: center;
   color: rgb(214, 214, 214);
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   border-radius: 2px;
   display: block;
   padding: 20px;
@@ -295,7 +314,6 @@ nav > ul > .sm-nav {
   color: #666;
 }
 
-
 .textarea i {
   line-height: 2.8;
   margin-left: 10px;
@@ -341,7 +359,9 @@ nav > ul > .sm-nav {
   margin: auto;
 }
 
-.youtube-video iframe, .video-container object, .video-container embed {
+.youtube-video iframe,
+.video-container object,
+.video-container embed {
   position: absolute;
   top: 0;
   left: 0;
@@ -445,19 +465,19 @@ nav > ul > .sm-nav {
   background-color: #8b8b8b;
   border-top: thick double #373737;
   border-left: thick double #373737;
-  border-right: double #FFFFFF;
-  border-bottom: double #FFFFFF;
+  border-right: double #ffffff;
+  border-bottom: double #ffffff;
   width: 36px;
   height: 36px;
   float: left;
 }
 
 .ui-tooltip {
-  background: #1F2DAA;
+  background: #1f2daa;
 }
 
 .ui-tooltip .ui-tooltip-content {
-  background: #1F2DAA;
+  background: #1f2daa;
   color: #eee;
 }
 
@@ -467,18 +487,33 @@ img.displayed {
   padding: 2px;
 }
 
+/* Privacy */
+.privacy {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.privacy .small {
+  font-size: 12px;
+  color: #828282;
+}
+
+.privacy h3 {
+  color: #3a3a3a;
+}
+
 /* Responsive */
 
 /* Less than 768px */
 @media (max-width: 767.98px) {
-
   #navigation {
     min-height: 60px;
   }
 
   nav .sm-menu {
     display: block;
-    background-image: url("../img/bars-solid.svg"); background-repeat: no-repeat;
+    background-image: url('../img/bars-solid.svg');
+    background-repeat: no-repeat;
     float: right;
     width: 26px;
     height: 26px;
