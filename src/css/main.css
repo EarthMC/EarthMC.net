@@ -451,7 +451,8 @@ footer a {
 }
 
 .grid {
-  width: 165px;
+  padding: 12px;
+  width: 145px;
 }
 
 .grid h5 {
