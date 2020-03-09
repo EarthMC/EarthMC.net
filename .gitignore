@@ -12,3 +12,4 @@ pushAsFix.sh
 
 \.idea/
 .DS_Store
+.vs/
