@@ -7,6 +7,16 @@
     color: rgb(24, 24, 24);
 }
 
+.wrap_cn {
+    max-width: 860px;
+    margin: auto;
+    font-family: 'Microsoft YaHei', sans-serif;
+    font-size:18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: rgb(24, 24, 24);
+}
+
 section {
     margin-bottom: 80px;
     padding-left: 20px;
