@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>EarthMC- Minecraft地缘政治沙盒服务器</title>
+    <meta name="description" content="Website of the EarthMC Minecraft servers.">
+    <meta charset="UTF-8"/>
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="code">
+    <meta name="author" content="Fix, KarlofDuty">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+
+</head>
+<body_cn>
+    <!-- Navbar -->
+    <nav id="navigation">
+        <ul class="centerwrap">
+            <!-- Logo -->
+            <a href="index_cn.html"><img class="logo" src="img/logo.png" alt="earthmc logo"></a>
+            <div id="toggleMenu" class="sm-menu"></div>
+            <!-- End logo -->
+            <!-- Large screen nav -->
+            <div class="lg-nav">
+                <li><a href="faq_cn.html"><b>常问问题</b></a></li>
+                <li><a target="_blank" href="https://earthmc.wikia.com"><b>维基</b></a></li>
+                <li><a href="rules_cn.html"><b>服规</b></a></li>
+                <!-- <li class="dropdown"><a href="#">Map</a>
+                    <ul class="sub-menu">
+                        <li><a href="https://earthmc.net/map/">Towny Map</a></li>
+                        <li><a href="https://earthmc.net/map/factions/">Factions Map</a></li>
+                    </ul>
+                </li> -->
+                <li><a href="https://earthmc.net/map/"><b>地图</b></a></li>
+                <li><a href="https://store.earthmc.net"><b>商店</b></a></li>
+            </div>
+            <!-- End large screen nav -->
+            <!-- Small screen nav -->
+            <div id="sm-nav-menu" class="sm-nav">
+                <li><a href="https://store.earthmc.net"><b>商店</b></a></li>
+                <!-- <li class="dropdown"><a href="#">Map <span class="caret">&#9660</span></a>
+                    <ul>
+                        <li><a href="https://earthmc.net/map/">Towny Map</a></li>
+                        <li><a href="https://earthmc.net/map/factions/">Factions Map</a></li>
+                    </ul>
+                </li> -->
+                <li><a href="https://earthmc.net/map/"><b>地图</b></a></li>
+                <li><a href="rules_cn.html"><b>服规</b></a></li>
+                <li><a target="_blank" href="https://earthmc.wikia.com"><b>维基</b></a></li>
+                <li><a href="faq_cn.html"><b>常问问题</b></a></li>
+            </div>
+            <!-- End Small screen nav -->
+        </ul>
+    </nav>
+    <section class="splashscreen">
+        <div class="cardwrap">
+            <div class="card">
+                <h2>欢迎来到</h2>
+                <h1>EarthMC</h1>
+                <p>EarthMC是Minecraft的地缘政治沙盒服务器。建立自己的城镇，加入一个国家，征服地球！</p>
+                <a href="#getstarted" class="cardbutton"><b>开始吧</b></a>
+            </div>
+            <div class="australiamap">
+                <img src="img/aus2.JPG" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="main-content">
+        <div class="textarea">
+            <h2 id="getstarted"><b>入门介绍</b></h2>
+            <p>
+                <span class="highlight">EarthMC is a geopolitical sandbox server with a custom made earth map</span>. This guide will get you started on your adventure.
+                <span class="highlight">Join using the address EarthMC.net</span>, join our <a href="https://www.discord.gg/6rAnxd8">Discord server</a> and open the <a href="https://EarthMC.net/map/">server world map</a> in your browser.
+                You can view other towns you want to join or take coordinates of the map to find a place you want to settle. <span class="highlight">Gold ingots are used as currency</span> and referred to as "gold" or G for short.
+                You get gold from mining gold ore, raiding and voting (/vote). You can deposit gold from your inventory to your town vault. This is used for town expenses such as claiming.
+                <div class="highlight-code">
+                    <div class="code-bg"><code class="markdown"><span>/t deposit</span></code></div>
+                </div>
+            </p>
+            <div class="videowrap">
+                <div class="youtube-video">
+                    <iframe src="https://www.youtube.com/embed/nJ3Wu4q5HSQ" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <h2 id="dynmap">Dynmap <b>动态地图</b></h2>
+            <p>
+                The interactive web map can be found at <a href="https://EarthMC.net/map/">EarthMC.net/map/</a>. This is a great tool to navigate the map.
+                A head icon with your name and skin marks your location on the server. If you can't find yourself on the map, make sure to check your coordinates in-game and compare them to coordinates displayed on the map.
+                Below the coordinates, you will find a menu where territory borders can be toggled. Move the mouse to the right of the screen to open a larger black menu. Here you can see who is online.
+            </p>
+
+            <h2 id="town"><b>建立城镇</b></h2>
+            <p>
+                <span class="highlight">In order to create a town, you need 64 gold</span> in your inventory. Make sure your stand in the area you want to settle your town in before running the command.
+                Once you're ready, open chat and type:
+                <div class="highlight-code">
+                    <div class="code-bg">
+                        <code class="markdown"><span>/t new &lt;Town_Name_Here></span></code>
+                    </div>
+                </div>
+            </p>
+            <p>
+                Make sure your town name does not include a space or any special characters. Towns are safe from raiding and looting.
+                Towns can only be raided during war only if they are part of a nation in war. Read more about war further down.
+                Mayors (the player that created the town) can toggle taxes, pvp ect. For more info, do:
+                <div class="highlight-code">
+                    <div class="code-bg">
+                        <code class="markdown"><span>/t toggle</span></code>
+                    </div>
+                </div>
+            </p>
+            <p>
+                <span class="highlight">In order to expand your town one chunk, you have to pay 16 gold</span> and run:
+                <div class="highlight-code">
+                    <div class="code-bg">
+                        <code class="markdown"><span>/t claim</span></code>
+                    </div>
+                </div>
+            </p>
+            <p>
+                This command will let you add town residents:
+                <div class="highlight-code">
+                    <div class="code-bg">
+                        <code class="markdown"><span>/t add &lt;Player_Name_Here&gt;</span></code>
+                    </div>
+                </div>
+            </p>
+            <p>
+                All towny commands are listed on the official towny website, <a target="_blank" href="https://github.com/TownyAdvanced/Towny/wiki/Towny-Commands">here</a>. In doubt, run:
+                <div class="highlight-code">
+                    <div class="code-bg"><code class="markdown"><span>/t ?</span></code></div>
+                </div>
+            </p>
+            <p>
+                Towns are automatically deleted after all members in the Town leave the server for more than 42 days.
+            </p>
+
+            <h2 id="nation"><b>加入国家</b></h2>
+            <p>
+                A nation is a collection of towns with one town as the capital. The town which created the nation is set as capital by default. Your town will get several benefits by joining a nearby nation.
+                You will have access to teleport to the capital where much of the nation's trade is done. You also have access to other capitals your nation is allied to.
+                In order to join a nation your town has to be within 3000 blocks of the capital (you can measure the distance on the dynmap).
+            </p>
+            <p>To create your own nation you have to pay 1024 gold from your town vault. Your town will become the nation's capital and town mayor will become nation king. Make sure you name your nation after the IRL country where it is located on the map. You can also name it after past nations. You can not name your nation fictional names (memetopia), union names (European Union) or alliances (NATO). For more information about nation naming rules go <a href="rules.html">here</a>.
+            <div class="highlight-code">
+                <div class="code-bg"><code class="markdown"><span>/n new &lt;Nation_Name_Here&gt;</span></code></div>
+            </div>
+            </p>
+
+            <h2 id="ranks"><b>阶级</b></h2>
+            <p>You can set different ranks for your town/nation members. This gives you the power to limit access, but also grant your residents different capabilities.
+            <div class="highlight-code">
+                <div class="code-bg"><code class="markdown"><span>/town rank add &lt;Player_Name Rank_Name&gt;</span> or <span>/nation rank add &lt;Player_Name Rank_Name&gt;</span></code></div>
+            </div>    
+            </p>
+            <ul>
+                <li>城镇阶级</li>
+                <li><strong>Councillor 副市长</strong> - Has almost all of the commands the Mayor has.</li>
+                <li><strong>Trusted 信任</strong> - A rank that has all private plot permissions everywhere in the town.</li>
+                <li><strong>Builder 建筑师</strong> - A rank that has all public plot permissions everywhere in the town.</li>
+                <li><strong>Treasurer 财务主管</strong> - Can use the town's economy.</li>
+                <li><strong>Police 警察</strong> - Is able to jail other town members.</li>
+                <li><strong>Recruiter 招聘</strong> - A rank that can invite people.</li>
+                <li><strong>Tax-exempt 免税</strong> - Pays no taxes.</li>
+                <li><strong>Settler 定居</strong> - Can claim new plots for the town.</li>
+            </ul>
+            <br>
+            <ul>
+                <li>国家阶级</li>
+                <li><strong>Chancellor 大臣</strong> - Has almost all of the commands the King has.</li>
+                <li><strong>Colonist 殖民者</strong> - Can invite to nation.</li>
+                <li><strong>Royal-treasurer 皇家财务主管</strong> - Can use the nation's economy.</li>
+            </ul>
+            <br>
+            <ul>
+                <li>服务器阶级</li>
+                <li><strong>Plus supporters</strong> - Awesome people who support this community by paying the bills, they have a plus symbol next to their names in chat which you can hover over for more info.</li>
+                <li><strong>Mod, Admin, Owner</strong> - Server staff, moderators deal with player issues and support while admins and owners deal with technical issues.</li>
+            </ul>
+
+            <h2 id="support">Support</h2>
+            <p>For support please open a support ticket via Discord on our <a href="https://discord.gg/EZBYmpp">support server</a> using the -new command.</p>
+            <p>To join our main Discord server click <a href="https://www.discord.gg/6rAnxd8">here</a>.</p>
+
+            <h2 id="rules"><b>服务器规则和申诉</b></h2>
+            <p>There are a few rules which everyone on the servers must follow.</p>
+            <p>You can read the rules <a href="rules.html">here</a>.</p>
+            <p>Ban appeals are handled in Discord over at our support server, click <a href="https://discord.gg/EZBYmpp">here</a> to join.</p>
+        </div>
+    </section>
+    <footer>
+        <h6>&copy; EarthMC 2020 | <a href="privacy.html">Privacy Policy</a></h6>
+    </footer>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163559242-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-163559242-1');
+    </script>
+
+</body_cn>
+</html>

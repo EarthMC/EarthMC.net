@@ -16,6 +16,14 @@ body {
   background-color: #f3f3f3;
 }
 
+body_cn {
+  font-family: 'Roboto', sans-serif, 'Microsoft YaHei';
+  font-size:18px;
+  color: #1e1e1e;
+  margin: 0;
+  background-color: #f3f3f3;
+}
+
 html {
   overflow-y: scroll;
 }
@@ -388,7 +396,7 @@ footer a {
 }
 
 .markdown {
-  font-family: 'PT Mono', monospace;
+  font-family: 'PT Mono', monospace, 'Microsoft YaHei';
   border-radius: 4px;
   line-height: 1.3rem;
 }

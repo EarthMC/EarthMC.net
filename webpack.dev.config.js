@@ -47,6 +47,11 @@ module.exports = {
       favicon: 'src/favicon.ico'
     }),
     new HtmlWebPackPlugin({
+      template: 'src/index_cn.html',
+      filename: 'index_cn.html',
+      favicon: 'src/favicon.ico'
+    }),
+    new HtmlWebPackPlugin({
       template: 'src/rules.html',
       filename: 'rules.html',
       favicon: 'src/favicon.ico'
@@ -59,6 +64,11 @@ module.exports = {
     new HtmlWebPackPlugin({
       template: 'src/faq.html',
       filename: 'faq.html',
+      favicon: 'src/favicon.ico'
+    }),
+    new HtmlWebPackPlugin({
+      template: 'src/faq_cn.html',
+      filename: 'faq_cn.html',
       favicon: 'src/favicon.ico'
     }),
     new HtmlWebPackPlugin({
