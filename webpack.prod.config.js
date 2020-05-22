@@ -38,28 +38,38 @@ module.exports = {
   plugins: [
     new webpack.optimize.ModuleConcatenationPlugin(),
     new HtmlWebPackPlugin({
-      template: 'src/index.html',
-      filename: 'index.html',
+      template: "src/index.html",
+      filename: "index.html",
       favicon: 'src/favicon.ico'
     }),
     new HtmlWebPackPlugin({
-      template: 'src/rules.html',
-      filename: 'rules.html',
+      template: "src/index_cn.html",
+      filename: "index_cn.html",
       favicon: 'src/favicon.ico'
     }),
     new HtmlWebPackPlugin({
-      template: 'src/rules_cn.html',
-      filename: 'rules_cn.html',
+      template: "src/rules.html",
+      filename: "rules.html",
       favicon: 'src/favicon.ico'
     }),
     new HtmlWebPackPlugin({
-      template: 'src/faq.html',
-      filename: 'faq.html',
+      template: "src/rules_cn.html",
+      filename: "rules_cn.html",
       favicon: 'src/favicon.ico'
     }),
     new HtmlWebPackPlugin({
-      template: 'src/privacy.html',
-      filename: 'privacy.html',
+      template: "src/faq.html",
+      filename: "faq.html",
+      favicon: 'src/favicon.ico'
+    }),
+    new HtmlWebPackPlugin({
+      template: "src/faq_cn.html",
+      filename: "faq_cn.html",
+      favicon: 'src/favicon.ico'
+    }),
+    new HtmlWebPackPlugin({
+      template: "src/privacy.html",
+      filename: "privacy.html",
       favicon: 'src/favicon.ico'
     }),
     new MiniCssExtractPlugin({
