@@ -10,15 +10,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  color: #1e1e1e;
-  margin: 0;
-  background-color: #f3f3f3;
-}
-
-body_cn {
   font-family: 'Roboto', sans-serif, 'Microsoft YaHei';
-  font-size:18px;
   color: #1e1e1e;
   margin: 0;
   background-color: #f3f3f3;
