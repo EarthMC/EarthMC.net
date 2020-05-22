@@ -16,6 +16,10 @@ body {
   background-color: #f3f3f3;
 }
 
+.body-cn {
+  font-size: 18px;
+}
+
 html {
   overflow-y: scroll;
 }
