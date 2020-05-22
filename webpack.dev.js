@@ -1,9 +1,14 @@
-const webpack = require('webpack');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const path = require('path');
 
 module.exports = {
-  mode: 'production',
+  mode: 'development',
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    compress: false,
+    port: 7000
+  },
   module: {
     rules: [
       {
@@ -12,13 +17,13 @@ module.exports = {
           {
             loader: 'html-loader',
             options: {
-              minimize: true
+              minimize: false
             }
           }
         ]
       },
       {
-        test: /\.(png|svg|jpe?g|JPE?G|gif)$/i,
+        test: /\.(png|svg|jpe?g|JPE?G|gif)$/,
         use: [
           {
             loader: 'file-loader',
@@ -30,13 +35,12 @@ module.exports = {
         ]
       },
       {
-        test: /\.(css)$/,
-        use: ['style-loader', 'css-loader']
+        test: /\.(css|scss)$/,
+        use: ['style-loader', 'css-loader', 'sass-loader']
       }
     ]
   },
   plugins: [
-    new webpack.optimize.ModuleConcatenationPlugin(),
     new HtmlWebPackPlugin({
       template: "src/index.html",
       filename: "index.html",
