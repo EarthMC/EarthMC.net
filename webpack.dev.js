@@ -23,7 +23,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.(png|svg|jpe?g|JPE?G|gif)$/i,
+        test: /\.(png|svg|jpe?g|JPE?G|gif)$/,
         use: [
           {
             loader: 'file-loader',
@@ -35,35 +35,45 @@ module.exports = {
         ]
       },
       {
-        test: /\.(css)$/,
-        use: ['style-loader', 'css-loader']
+        test: /\.(css|scss)$/,
+        use: ['style-loader', 'css-loader', 'sass-loader']
       }
     ]
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: 'src/index.html',
-      filename: 'index.html',
+      template: "src/index.html",
+      filename: "index.html",
       favicon: 'src/favicon.ico'
     }),
     new HtmlWebPackPlugin({
-      template: 'src/rules.html',
-      filename: 'rules.html',
+      template: "src/index_cn.html",
+      filename: "index_cn.html",
       favicon: 'src/favicon.ico'
     }),
     new HtmlWebPackPlugin({
-      template: 'src/rules_cn.html',
-      filename: 'rules_cn.html',
+      template: "src/rules.html",
+      filename: "rules.html",
       favicon: 'src/favicon.ico'
     }),
     new HtmlWebPackPlugin({
-      template: 'src/faq.html',
-      filename: 'faq.html',
+      template: "src/rules_cn.html",
+      filename: "rules_cn.html",
       favicon: 'src/favicon.ico'
     }),
     new HtmlWebPackPlugin({
-      template: 'src/privacy.html',
-      filename: 'privacy.html',
+      template: "src/faq.html",
+      filename: "faq.html",
+      favicon: 'src/favicon.ico'
+    }),
+    new HtmlWebPackPlugin({
+      template: "src/faq_cn.html",
+      filename: "faq_cn.html",
+      favicon: 'src/favicon.ico'
+    }),
+    new HtmlWebPackPlugin({
+      template: "src/privacy.html",
+      filename: "privacy.html",
       favicon: 'src/favicon.ico'
     }),
     new MiniCssExtractPlugin({

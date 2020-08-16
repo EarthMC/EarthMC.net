@@ -10,10 +10,14 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif, 'Microsoft YaHei';
   color: #1e1e1e;
   margin: 0;
   background-color: #f3f3f3;
+}
+
+.body-cn {
+  font-size: 18px;
 }
 
 html {
@@ -388,7 +392,7 @@ footer a {
 }
 
 .markdown {
-  font-family: 'PT Mono', monospace;
+  font-family: 'PT Mono', monospace, 'Microsoft YaHei';
   border-radius: 4px;
   line-height: 1.3rem;
 }

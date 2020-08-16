@@ -1,9 +1,13 @@
+const path = require('path');
 const webpack = require('webpack');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   mode: 'production',
+  entry: {
+    main: path.resolve(__dirname, "src/index.js")
+  },
   module: {
     rules: [
       {
@@ -18,7 +22,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.(png|svg|jpe?g|JPE?G|gif)$/i,
+        test: /\.(png|svg|jpe?g|JPE?G|gif)$/,
         use: [
           {
             loader: 'file-loader',
@@ -30,40 +34,50 @@ module.exports = {
         ]
       },
       {
-        test: /\.(css)$/,
-        use: ['style-loader', 'css-loader']
+        test: /\.(css|scss)$/,
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
       }
     ]
   },
   plugins: [
     new webpack.optimize.ModuleConcatenationPlugin(),
     new HtmlWebPackPlugin({
-      template: 'src/index.html',
-      filename: 'index.html',
+      template: "src/index.html",
+      filename: "index.html",
       favicon: 'src/favicon.ico'
     }),
     new HtmlWebPackPlugin({
-      template: 'src/rules.html',
-      filename: 'rules.html',
+      template: "src/index_cn.html",
+      filename: "index_cn.html",
       favicon: 'src/favicon.ico'
     }),
     new HtmlWebPackPlugin({
-      template: 'src/rules_cn.html',
-      filename: 'rules_cn.html',
+      template: "src/rules.html",
+      filename: "rules.html",
       favicon: 'src/favicon.ico'
     }),
     new HtmlWebPackPlugin({
-      template: 'src/faq.html',
-      filename: 'faq.html',
+      template: "src/rules_cn.html",
+      filename: "rules_cn.html",
       favicon: 'src/favicon.ico'
     }),
     new HtmlWebPackPlugin({
-      template: 'src/privacy.html',
-      filename: 'privacy.html',
+      template: "src/faq.html",
+      filename: "faq.html",
+      favicon: 'src/favicon.ico'
+    }),
+    new HtmlWebPackPlugin({
+      template: "src/faq_cn.html",
+      filename: "faq_cn.html",
+      favicon: 'src/favicon.ico'
+    }),
+    new HtmlWebPackPlugin({
+      template: "src/privacy.html",
+      filename: "privacy.html",
       favicon: 'src/favicon.ico'
     }),
     new MiniCssExtractPlugin({
-      filename: '[name].css',
+      filename: '[name]-[hash].css',
       chunkFilename: '[id].css'
     })
   ]
