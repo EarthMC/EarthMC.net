@@ -1,13 +1,12 @@
+const path = require('path');
+const webpack = require('webpack');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const path = require('path');
 
 module.exports = {
-  mode: 'development',
-  devServer: {
-    contentBase: path.join(__dirname, 'dist'),
-    compress: false,
-    port: 7000
+  mode: 'production',
+  entry: {
+    main: path.resolve(__dirname, "src/index.js")
   },
   module: {
     rules: [
@@ -17,13 +16,13 @@ module.exports = {
           {
             loader: 'html-loader',
             options: {
-              minimize: false
+              minimize: true
             }
           }
         ]
       },
       {
-        test: /\.(png|svg|jpe?g|JPE?G|gif)$/i,
+        test: /\.(png|svg|jpe?g|JPE?G|gif)$/,
         use: [
           {
             loader: 'file-loader',
@@ -35,12 +34,13 @@ module.exports = {
         ]
       },
       {
-        test: /\.(css)$/,
-        use: ['style-loader', 'css-loader']
+        test: /\.(css|scss)$/,
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
       }
     ]
   },
   plugins: [
+    new webpack.optimize.ModuleConcatenationPlugin(),
     new HtmlWebPackPlugin({
       template: "src/index.html",
       filename: "index.html",
@@ -77,7 +77,7 @@ module.exports = {
       favicon: 'src/favicon.ico'
     }),
     new MiniCssExtractPlugin({
-      filename: '[name].css',
+      filename: '[name]-[hash].css',
       chunkFilename: '[id].css'
     })
   ]
