@@ -3,22 +3,26 @@
   "version": "1.1.4",
   "description": "EarthMC's main website",
   "main": "src/index.js",
-  "scripts": {
+  "scripts": 
+  {
     "prod": "webpack --config webpack.prod.js",
     "dev": "webpack --config webpack.dev.js",
     "start:dev": "webpack-dev-server --config webpack.dev.js --open"
   },
-  "repository": {
+  "repository": 
+  {
     "type": "git",
     "url": "git+https://github.com/EarthMC/EarthMC.net.git"
   },
   "author": "FixTheAdmin, KarlOfDuty, DasCodes",
   "license": "GPL-3.0-only",
-  "bugs": {
+  "bugs": 
+  {
     "url": "https://github.com/EarthMC/EarthMC.net/issues"
   },
   "homepage": "https://earthmc.net/",
-  "devDependencies": {
+  "devDependencies": 
+  {
     "css-loader": "^3.5.3",
     "file-loader": "^6.0.0",
     "html-loader": "^1.1.0",
