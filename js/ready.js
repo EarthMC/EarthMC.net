@@ -14,5 +14,3 @@ egg.addEventListener('click', ()=>{
     //Animation
     egg.classList.toggle("toggle");
 });
-
-alert("eat egg")
