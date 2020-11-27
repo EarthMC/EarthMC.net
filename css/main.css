@@ -10,6 +10,7 @@ body {
     margin: 0;
     background-color: #f3f3f3;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 html {
@@ -54,7 +55,131 @@ input {
 }
 /*End of CSS bug fixes*/
 
+/*Start of Zukis' part*/
+/*Nav*/
+.sweden{
+  padding:1vh -1vw;
+  text-align: center;
+}
 
+nav{
+  height: 3.9rem;
+  width: 100vw;
+  background-color: #f3f3f3;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: row !important;
+  position: fixed;
+  z-index: 10;
+}
+
+.nav-links{
+  list-style: none; 
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nav-links li a{
+  text-decoration: none;
+  margin: 0 0.7vw;
+}
+.nav-links li a:hover {
+  color: #000;
+}
+.nav-links li {
+  position: relative;
+}
+.nav-links li a::before {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0%;
+  background-color: #000;
+  position: absolute;
+  transition: all ease-in-out 250ms;
+  margin: 0 0 0 10%;
+}
+
+.fix_egg div{
+  width: 30px;
+  height:3px;
+  background: #000;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+.fix_egg{
+  display: none;
+}
+/*Responsive navigation (by __Zuki__) : */
+@media screen and (max-width: 800px){
+  nav{
+      position: fixed;
+      z-index: 3;
+  }
+
+  .fix_egg{
+      display:block;
+      position: absolute;
+      cursor: pointer;
+      right: 5%;
+      top: 50%;
+      transform: translate(-5%, -50%);
+      z-index: 2;
+      transition: all 0.7s ease;
+  }
+  .nav-links{
+    display: flex;
+      position: fixed;
+      background: #f3f3f3;
+      height: 100vh;
+      width: 100%;
+      flex-direction: column-reverse;
+      clip-path: circle(50px at 90% -20%);
+      -webkit-clip-path: circle(50px at 90% -10%);
+      transition: all 1s ease-out;
+      pointer-events: none;
+      text-align: right;
+  }
+  .nav-links.open{
+      clip-path: circle(1000px at 90% -10%);
+      -webkit-clip-path: circle(1000px at 90% -10%);
+      pointer-events: all;
+  }
+  .nav-links li{
+      opacity: 0;
+  }
+  .nav-links li:nth-child(1){
+      transition: all 0.5s ease 0.8s;
+  }
+  .nav-links li:nth-child(2){
+      transition: all 0.5s ease 0.6s;
+  }
+  .nav-links li:nth-child(3){
+      transition: all 0.5s ease 0.4s;
+  }
+  .nav-links li:nth-child(4){
+      transition: all 0.5s ease 0.2s;
+  }
+  .nav-links li:nth-child(5){
+    transition: all 0.5s ease 0.1s;
+  }
+  li.fade{
+      opacity: 1;
+  }
+}
+/* End Resp.*/
+/*End Nav*/
+.toggle .line1{
+  transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+  transition: all 0.7s ease;
+  width:0;
+}
+.toggle .line3{
+  transform: rotate(45deg) translate(-5px,-6px);
+}
+/*END ZUKI PART*/
 
 .centerwrap {
   max-width: 1280px;
@@ -133,49 +258,8 @@ input {
   image-rendering: pixelated;
 }
 
-nav {
-  
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-nav li {
-  float: right;
-  padding: 0 12px 0 0px;
-  color: black;
-}
-
-nav li a{
-  display: block;
-  color: #1E1E1E;
-  padding: 23px 5px 21px 16px;
-  text-decoration: none;
-  letter-spacing: 0.3px;
-  font-weight: bold;
-  font-size: 16px;
-  letter-spacing: 1px;
-}
-
-nav li a:hover {
-  color: rgb(109, 109, 109);
-  transition: 0.3s;
-}
-
-.selectednavitem {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  border-bottom: 2px solid white;
-  color: #fff;
-}
-
 .splashscreen {
-  height: calc(100vh - 64px);
+  height: calc(100vh - 2px);
   max-height: 720px;
   overflow: hidden;
   max-width: 1250px; /* not 1280 to make 15px margin on both sides */
