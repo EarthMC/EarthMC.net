@@ -59,7 +59,7 @@ input {
 /*Nav*/
 .sweden{
   padding:1vh -1vw;
-  text-align: center;
+  text-align: left;
 }
 
 nav{
@@ -68,7 +68,7 @@ nav{
   background-color: #f3f3f3;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
   display: flex;
-  flex-direction: row !important;
+  flex-direction: row;
   position: fixed;
   z-index: 10;
 }
@@ -259,11 +259,10 @@ nav{
 }
 
 .splashscreen {
-  height: calc(100vh - 2px);
+  height: calc(100vh - 64px);
   max-height: 720px;
   overflow: hidden;
   max-width: 1250px; /* not 1280 to make 15px margin on both sides */
-  margin: auto;
   border-radius: 15px;
   padding: 0 15px 0 15px;
   background-image: url('../img/bg6.webp');
@@ -271,6 +270,7 @@ nav{
   background-color: #3549BD;
   text-align: center;
   display: flex;
+  margin-top: 11vh;
   justify-content: center;
   align-items: center;
   flex-direction: column;
