@@ -552,6 +552,40 @@ footer {
   text-align: center;
 }
 
+/* Recipes */
+.recipe-boxes {
+  float: left;
+  margin-bottom: 20px;
+}
+
+#recipes::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.crafting-grid {
+  padding: 12px;
+  width: 145px;
+}
+
+.crafting-grid h5 {
+  color: rgb(75, 75, 75);
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.crafting-ingredient {
+  background-color: #8b8b8b;
+  border: 2px solid;
+  border-color: #373737 #FFF #FFF #373737;
+  image-rendering: pixelated;
+  width: 36px;
+  height: 36px;
+  float: left;
+}
+
 /* responsive */
 @media only screen and (max-width: 1265px) {
   .splashscreen {
