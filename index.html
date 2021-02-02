@@ -21,18 +21,28 @@
         <meta name="twitter:description" content="EarthMC is a geopolitical sandbox server for Minecraft. Form your own town, join a nation and conquer earth!"/>
         <meta name="twitter:url" content="https://earthmc.net/" />
         <meta name="twitter:image" content="https://earthmc.net/img/newyorksunset.png" />
+        <!--JQUERY-->
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     </head>
 	<body>
-        <nav id="navigation">
-            <ul class="centerwrap">
-            <li class="country">Made in <br> Sweden <img src="img/sweden.png" alt="swedenflag" width="16" height="10"></li>
-            <li><a href="rules.html">rules</a></li>
-            <li><a href="premium.html">premium</a></li>
-            <li><a target="_blank" rel="noreferrer" href="https://earthmc.net/map/" data-no-instant>map</a></li>
-            <li><a href="https://earthmc.net">home</a></li>
-            </ul>
-        </nav>
-        </nav>
+      <nav>
+            <div class="sweden">
+              <li class="country">Made in <br> Sweden <img src="img/sweden.png" alt="swedenflag" width="16" height="10">
+              </li>
+            </div>
+            <div class="fix_egg">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+            </div>
+            <div class="nav-links">
+              <li><a href="faq.html">faq</a></li>
+              <li><a href="rules.html">rules</a></li>
+              <li><a href="premium.html">premium</a></li>
+              <li><a target="_blank" rel="noreferrer" href="https://earthmc.net/map/" data-no-instant>map</a></li>
+              <li><a href="https://earthmc.net">home</a></li>
+            </div>
+      </nav>
         <section class="splashscreen">
                 <h1>Join the #1 ranking <br> Minecraft earth server </h1>
                 <div class="splashsubtitle"> The original✔️ Towny✔️ McMMO✔️ Player run economy✔️ Earth map✔️ Dynmap✔️ 2000+ towns✔️ Lag✔️</div>
@@ -337,6 +347,21 @@
             gtag('js', new Date());
 
             gtag('config', 'UA-163559242-1');
+        </script>
+        <script>
+          const egg = document.querySelector(".fix_egg");
+          const navLinks = document.querySelector(".nav-links");
+          const links = document.querySelectorAll(".nav-links li");
+
+          egg.addEventListener('click', ()=>{
+              navLinks.classList.toggle("open");
+              links.forEach(link => {
+                  link.classList.toggle("fade");
+              });
+
+              //Animation
+              egg.classList.toggle("toggle");
+          });
         </script>
     </body>
 </html>

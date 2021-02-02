@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"></html>
+<html lang="en-US"></html>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,9 @@
   <meta name="description" content="Frequently asked questions in EarthMC">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Fix, KarlofDuty, DasCodes">
+  <style>*{margin:0;padding:0}body{font-family:Arial,sans-serif;color:#1E1E1E;margin:0;background-color:#f3f3f3;text-rendering:optimizeLegibility}html{overflow-y:scroll}*{box-sizing:border-box;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-kerning:auto}a{background-color:transparent;text-decoration:none;color:#1E1E1E}img{border:0}.centerwrap{max-width:1280px;margin:auto}.country{display:block;color:#585858;padding:12px 16px 0px 15px;line-height:20px;text-decoration:none;letter-spacing:0.3px;line-height:px;font-size:16px;float:left;position:absolute}.country img{height:10px;margin-bottom:1px;image-rendering:pixelated}nav ul{list-style-type:none;margin:0;padding:0;overflow:hidden}nav li{float:right;padding:0 12px 0 0px;color:black}nav li a{display:block;color:#1E1E1E;padding:23px 5px 21px 16px;text-decoration:none;letter-spacing:0.3px;font-weight:bold;font-size:16px;letter-spacing:1px}.splashscreen{height:calc(100vh - 64px);max-height:720px;overflow:hidden;max-width:1250px;margin:auto;border-radius:15px;padding:0 15px 0 15px;background-image:url('../img/bg6.webp');background-size:cover;background-color:#3549BD;text-align:center;display:flex;justify-content:center;align-items:center;flex-direction:column;color:#fff;box-shadow:0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23)}.splashscreen h1{font-size:50px;letter-spacing:2px;word-spacing:3px;line-height:60px}.splashsubtitle{margin-top:20px;align-self:center;color:#ccc;line-height:30px;max-width:470px}.splashscreen .copy{margin-top:50px;font-size:20px;padding:25px;border-radius:15px;font-size:30px;letter-spacing:2px;font-weight:bold;color:#000000;box-shadow:0 10px 20px rgba(0,0,0,0.19),0 6px 6px rgba(0,0,0,0.23);background-color:#4CAF50;border:none;outline:none}#snackbar{visibility:hidden;min-width:250px;margin-left:-125px;background-color:#333;color:#fff;text-align:center;border-radius:15px;padding:14px;position:fixed;z-index:1;left:50%;top:8px}.quotewrap{display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-content:center;-ms-flex-line-pack:start;align-content:center;-webkit-align-items:flex-start;-ms-flex-align:start;align-items:flex-start;min-height:500px}.quoteblock{-webkit-order:0;-ms-flex-order:0;order:0;-webkit-flex:0 1 auto;-ms-flex:0 1 auto;flex:0 1 auto;-webkit-align-self:auto;-ms-flex-item-align:auto;align-self:auto;margin:10px;width:300px;padding-top:20px;display:inline-block}.quoteblock q{font-size:20px;word-spacing:1px}.quoteblock img{margin-bottom:10px;border-radius:50%;box-shadow:0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24)}.quoteblock p{padding-top:10px;color:#2e2e2e;line-height:30px}@media only screen and (max-width:1265px){.splashscreen{border-radius:0px}.quotewrap{padding:40px 0 40px 0}}@media only screen and (max-width:770px){.splashscreen h1{font-size:40px;line-height:40px}.quoteblock{margin:20px auto;width:80%}.country{font-size:13px;line-height:14px;padding-top:20px}}@media only screen and (max-width:390px){nav li a{padding:23px 2px 21px 2px;font-size:13px}}</style>
+  <!-- Stylesheets -->
+  <link as="style" rel="preload stylesheet" type="text/css" href="css/main.css"/>
 
   <!-- Google fonts -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
@@ -17,21 +20,29 @@
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <!--JQUERY-->
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
 </head>
 <body>
 <!-- Navbar -->
-<nav id="navigation">
-  <ul class="centerwrap">
-  <li class="country">Made in <br> Sweden <img src="img/sweden.png" alt="swedenflag"></li>
-  <li><a href="rules.html">rules</a></li>
-  <li><a href="premium.html">premium</a></li>
-  <li><a target="_blank" rel="noopener" href="https://earthmc.net/map/">map</a></li>
-  <li><a href="https://earthmc.net">home</a></li>
-  </ul>
+<nav>
+  <div class="sweden">
+    <li class="country">Made in <br> Sweden <img src="img/sweden.png" alt="swedenflag" width="16" height="10">
+    </li>
+  </div>
+  <div class="fix_egg">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+  </div>
+  <div class="nav-links">
+    <li><a href="faq.html">faq</a></li>
+    <li><a href="rules.html">rules</a></li>
+    <li><a href="premium.html">premium</a></li>
+    <li><a target="_blank" rel="noopener" href="https://earthmc.net/map/">map</a></li>
+    <li><a href="https://earthmc.net">home</a></li>
+  </div>
 </nav>
 <div class="main-content">
   <div class="textarea">
@@ -44,17 +55,17 @@
 
 
       <section id="account-transfer">
-        <h4>2. Will you transfer data from an account to another account of mine?</h4>
+        <h4>1. Will you transfer data from an account to another account of mine?</h4>
         <p>No, we are not able to transfer any data between accounts. This includes transferring your town to someone else should you be banned.</p>
       </section>
 
       <section id="mod-applications">
-        <h4>3. How do I apply for moderator?</h4>
+        <h4>2. How do I apply for moderator?</h4>
         <p>Apply here. <a href="https://goo.gl/Ssc9U2">https://goo.gl/Ssc9U2</a>.</p>
       </section>
 
       <section id="chat-channels">
-        <h4>4. How do I switch between chat channels?</h4>
+        <h4>3. How do I switch between chat channels?</h4>
         <div class="highlight-code">
           <div class="code-bg">
             <code class="markdown"><span>/global</span> -for global chat</code><br>
@@ -72,12 +83,12 @@
       </section>
 
       <section id="vote-refunds">
-        <h4>5. I voted but I did not get my gold. Can I get a refund?</h4>
+        <h4>4. I voted but I did not get my gold. Can I get a refund?</h4>
         <p>No, the issue is on the side of the voting sites and nothing we can change.</p>
       </section>
 
       <section id="link-discord">
-        <h4>6. How can I link my Minecraft account with my Discord account?</h4>
+        <h4>5. How can I link my Minecraft account with my Discord account?</h4>
         <p>Type the following command in-game and follow the instructions.</p>
         <div class="highlight-code">
           <div class="code-bg">
@@ -87,12 +98,12 @@
       </section>
 
       <section id="data-deletion">
-        <h4>7. My town got deleted, why?</h4>
+        <h4>6. My town got deleted, why?</h4>
         <p>Players are deleted from towns after 42 days of inactivity.</p>
       </section>
 
       <section id="mcmmo">
-        <h4>8. What are the server's mcMMO settings?</h4>
+        <h4>7. What are the server's mcMMO settings?</h4>
         <p>Some of mcMMO abilities and skills are disabled to maintain game balance.</p>
         <p>Disabled skills are:</p>
         <div class="highlight-code">
@@ -127,6 +138,21 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-163559242-1');
+</script>
+<script>
+  const egg = document.querySelector(".fix_egg");
+  const navLinks = document.querySelector(".nav-links");
+  const links = document.querySelectorAll(".nav-links li");
+
+  egg.addEventListener('click', ()=>{
+      navLinks.classList.toggle("open");
+      links.forEach(link => {
+          link.classList.toggle("fade");
+      });
+
+      //Animation
+      egg.classList.toggle("toggle");
+  });
 </script>
 </body>
 </html>
