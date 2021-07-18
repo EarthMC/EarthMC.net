@@ -1,19 +1,19 @@
 ---
-name: Rules suggestion
-about: A short description of the rule
-title: ''
-labels: ''
-assignees: ''
-
+name: Rules Suggestion
+about: Suggest a new/edit for the rules.
+title: '[Rule]'
+labels: 'Rules'
 ---
 
-**Exact wording of the rule**
-Exactly how the rule should be written on the rules page.
+### Exact wording of the rule
+<!-- Exactly how the rule should be written on the rules page. -->
 
-**How will this rule affect the community**
-Write your opinion on why this rule will be better for the community.
 
-**Do you think this will benefit both the staff and the players**
-Describe how both parties will benefit from this rule.
+### How will this rule affect the community
+<!-- Write your opinion on why this rule will be better for the community. -->
 
-**Please use <https://github.com/EarthMC/Issue-Tracker> for issues other than the EarthMC.net website**
+
+### Do you think this will benefit both the staff and the players
+<!-- Describe how both parties will benefit from this rule. -->
+
+<!-- Please use <https://github.com/EarthMC/Issue-Tracker> for issues other than the EarthMC.net website -->
