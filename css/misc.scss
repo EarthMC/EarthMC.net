@@ -1,0 +1,106 @@
+.modal {
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #181818;
+    display: none;
+    overflow: hidden;
+    z-index: 9;
+
+    &.active {
+        display: block;
+        
+    }
+
+    .modal-content {
+        width: inherit;
+        height: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .form-group {
+            padding: 16px;
+            font-size: 24px;
+            display: none;
+
+            &.active {
+                display: block;
+            }
+    
+            input[type=text] {
+                padding: 16px;
+                outline: none;
+                font-size: inherit;
+                margin-right: 16px;
+                border: 5px solid transparent;
+                
+                &:focus {
+                    border: 5px solid #ff66cd;
+                }
+            }
+
+            input[type=submit] {
+                font-size: inherit;
+                padding: 16px 32px;
+                color: #fff;
+                border-top: 5px solid #ff66cd;
+                border-bottom: 5px solid #dd219f;
+                background: rgb(241,0,163);
+                background: linear-gradient(133deg, rgba(241,0,163,1) 46%, rgba(255,75,197,1) 76%);
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            .error {
+                font-size: 16px;
+                margin-top: 16px;
+                color: rgb(241,0,163);
+            }
+        }
+
+        .progress {
+            font-size: 24px;
+            color: rgb(241,0,163);
+            display: none;
+
+            &.active {
+                display: block;
+            }
+        }
+    }
+
+}
+
+.email-link {
+    color: rgb(241,0,163);
+}
+
+.checkout-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+
+    &.active {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .paddle-checkout {
+        background-color: #fff;
+        position: relative;
+    }
+}
