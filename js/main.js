@@ -136,8 +136,8 @@ if (getUrlParams('ign')) {
 
 // Paddle config
 if (window.location.pathname == '/store') {
-  Paddle.Environment.set('sandbox');
-  Paddle.Setup({ vendor: 9416 });
+  // Paddle.Environment.set('sandbox');
+  Paddle.Setup({ vendor: 140416 });
   
   if (btn) {
     btn.addEventListener('click', () => {
