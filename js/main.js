@@ -155,7 +155,7 @@ const openPaddleCheckout = productId => {
 }
 
 if (window.location.pathname == '/store.html') {
-  Paddle.Setup({ vendor: 9416 });
+  Paddle.Setup({ vendor: 140416 });
   
   if (yearlyBtn && quarterlyBtn) {
     yearlyBtn.addEventListener('click', () => {
