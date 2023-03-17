@@ -4,19 +4,20 @@ const logoutBtn = document.querySelector('#logout');
 const modal = document.querySelector('.modal');
 const formGroup = document.querySelector('.form-group');
 const progress = document.querySelector('.progress');
-const avatar = document.querySelector('.avatar');
+const avatars = document.querySelectorAll('.avatar');
 const ignEl = document.querySelectorAll('.ign');
 const paddleCheckoutCloseBtn = document.querySelector('.paddle-checkout');
-const btn = document.querySelector('.premium-btn');
 const checkoutContainer = document.querySelector('.checkout-container');
 const errorEl = document.querySelector('.error');
+const yearlyBtn = document.querySelector('#yearlyBtn');
+const quarterlyBtn = document.querySelector('#quarterlyBtn');
 
 function getCookie(cname) {
   let cookieName = cname + '=';
   let decodedCookie = decodeURIComponent(document.cookie);
   let cookieArr = decodedCookie.split(';');
 
-  for(let i = 0; i <cookieArr.length; i++) {
+  for(let i = 0; i < cookieArr.length; i++) {
     let cookie = cookieArr[i];
 
     while (cookie.charAt(0) == ' ') {
@@ -64,19 +65,25 @@ function handleLogin(ign) {
   fetch('https://api.ashcon.app/mojang/v2/user/' + ign)
     .then(async response => {
       const data = await response.json();
-      const uuid = data.uuid.replace(/\-/g, '');
-      const username = data.username;
-      setCookie('uuid', uuid, 60);
-      setCookie('ign', username, 60)
-      window.location.href = '/store.html';
 
-      if (!response.ok) {
+      if (response.ok) {
+        const uuid = data.uuid.replace(/\-/g, '');
+        const username = data.username;
+        setCookie('uuid', uuid, 60);
+        setCookie('ign', username, 60)
+        window.location.href = '/store.html';
+      } else {
         toogleProgress();
-        if (data.code == 404) {
-          errorEl.innerHTML = 'Username not found!';
-        }
-        if (data.code == 429) {
-          errorEl.innerHTML = 'Please try in a bit!';
+        console.log(data.code)
+        switch (data.code) {
+          case 404:
+            errorEl.innerHTML = 'Username not found!';
+            break;
+          case 429:
+            errorEl.innerHTML = 'Please try again in a bit!';
+            break;
+          default:
+            errorEl.innerHTML = 'Something went wrong!';
         }
       }
     })
@@ -119,14 +126,16 @@ if (logoutBtn) {
   });
 }
 
-if ((avatar && ignEl) && getCookie('uuid') != 0) {
-  avatar.src = 'https://crafatar.com/avatars/' + getCookie('uuid') + '?size=64&default=MHF_Steve&overlay';
+if ((avatars && ignEl) && getCookie('uuid') != 0) {
+  avatars.forEach(avatar => {
+    avatar.src = 'https://crafatar.com/avatars/' + getCookie('uuid') + '?size=125&default=MHF_Steve&overlay';
+  })
   ignEl.forEach(el => {
     el.innerHTML = getCookie('ign');
   });
 }
 
-if (window.location.pathname == '/store' && getCookie('uuid').length == 0) {
+if (window.location.pathname == '/store.html' && getCookie('uuid').length == 0) {
   toogleModal();
 }
 
@@ -135,19 +144,22 @@ if (getUrlParams('ign')) {
 }
 
 // Paddle config
-if (window.location.pathname == '/store') {
-  Paddle.Environment.set('sandbox');
+const openPaddleCheckout = productId => {
+  Paddle.Checkout.open({
+    product: productId,
+    passthrough: JSON.stringify({
+      "uuid": getCookie('uuid'),
+      // "rewardful": { referral: referral }
+    })
+  })
+}
+
+if (window.location.pathname == '/store.html') {
   Paddle.Setup({ vendor: 9416 });
   
-  if (btn) {
-    btn.addEventListener('click', () => {
-      Paddle.Checkout.open({
-        product: 40992,
-        passthrough: JSON.stringify({
-          "uuid": getCookie('uuid'),
-          // "rewardful": { referral: referral }
-        })
-      })
+  if (yearlyBtn && quarterlyBtn) {
+    yearlyBtn.addEventListener('click', () => {
+      openPaddleCheckout(817242);
       // checkoutContainer.classList.add('active');
       // Paddle.Checkout.open({
       //   method: 'inline',
@@ -160,5 +172,9 @@ if (window.location.pathname == '/store') {
       //   frameStyle: 'width:100%; min-width:312px; background-color: transparent; border: none;'
       // });
     });
+
+    quarterlyBtn.addEventListener('click', () => {
+      openPaddleCheckout(817245);
+    })
   }
 }
